@@ -47,7 +47,7 @@ time.sleep(0.1)
 print('Ready')
 
 try:
-	bus = can.interface.Bus(channel='can0', bustype='socketcan_native')
+	bus = can.interface.Bus(channel='can0', bustype='socketcan')
 except OSError:
 	print('Cannot find PiCAN board.')
 	GPIO.output(led,False)
